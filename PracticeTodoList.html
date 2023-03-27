@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="./practiceTodoList.css">
+    <link rel="stylesheet" href="./completed.css">
+    <script src="./completed.js" defer></script>
+    <script src="./practiceTodoList.js" defer></script>
+</head>
+<body>
+    <div class="container">
+            <h1 class="logo">
+                TODO
+            </h1>
+        <div class="input">
+            <input class = "title-input" type="text" placeholder="Title......." maxlength="15">
+            <input class="description-input" type="text" placeholder="Write Todo Description Here....." maxlength="250">
+            <img class = "timeImg" src="./icons8-alarm-clock-24.png">
+            <input type="time" name="time" placeholder="hrs:mins" pattern="^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$" class="fxTime" required>
+        </div>
+        <div class="button">
+            <button type="submit">Add-Todo</button>
+        </div>
+    </div>
+
+<div class="trails">
+    <div class="Clock">
+        <div class = "time common"></div>
+        <div class="list-feature">
+            <p class="feature-0 feature">Home</p>
+            <p class="feature-1 feature">Completed</p>
+            <p class="feature-2 feature">Pending</p>
+            <p class="feature-3 feature">Deleted</p>
+        </div>
+    </div>
+
+    <div class="list-container">
+    </div>
+        
+    <div class="container-table">
+        <table>
+            <thead class="tableContent">
+                <tr class="head-content">
+                    <th class="head">No.</th> 
+                    <th class="head">Title</th>
+                    <th class="head">Description</th>
+                    <th class="head">Status</th>
+                </tr>
+            </thead>
+            <tbody class = "containerList">
+              
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="deleted-table">
+        <table>
+            <thead class="tableContent">
+                <tr class="head-content">
+                    <th class="head">No.</th> 
+                    <th class="head">Title</th>
+                    <th class="head">Description</th>
+                    <th class="head">Status</th>
+                </tr>
+            </thead>
+            <tbody class = "deletedContainerList">
+              
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+    
+</body>
+</html>
